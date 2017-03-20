@@ -1,10 +1,10 @@
-// 7.	Ler 3 números e imprimi-los em ordem crescente.
+/* 7.	Ler 3 números e imprimi-los em ordem crescente.
 import java.util.Scanner;
 
 public class Exercicio07 {
 
 	public static void main(String[] args) {
-		Scanner teclado = new Scanner(System.in;
+		Scanner teclado = new Scanner(System.in);
 		
 		int num;
 		
@@ -16,3 +16,4 @@ public class Exercicio07 {
 	}
 
 }
+*/
