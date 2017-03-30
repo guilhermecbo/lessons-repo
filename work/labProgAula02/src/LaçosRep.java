@@ -4,7 +4,7 @@ public class LaçosRep {
 
 	public static void main(String[] args) {
 		Scanner teclado = new Scanner(System.in);
-		//int k = 0;
+		int k = 0;
 		char op = 'S';
 		
 		while (op=='S' || op =='s'){

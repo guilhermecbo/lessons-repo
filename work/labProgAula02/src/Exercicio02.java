@@ -5,9 +5,9 @@ public class Exercicio02 {
 	static int n1,n2;
 
 	public static void main(String[] args) {
-		lerNumeros();		// Ler dois nÃºmeros
-		trocarNumeros();	// Troca conteÃºdo das variÃ¡veis
-		mostrarNumeros();	// Mostra o conteÃºdo das variÃ¡veis
+		lerNumeros();		// Ler dois números
+		trocarNumeros();	// Troca conteúdo das variáveis
+		mostrarNumeros();	// Mostra o conteúdo das variáveis
 	}// ---------------------------------------------------------------
 	
 	static void lerNumeros(){
@@ -19,8 +19,8 @@ public class Exercicio02 {
 	}// ---------------------------------------------------------------
 	
 	static void mostrarNumeros(){
-		System.out.println("O valor de N1 ï¿½: "+n1);
-		System.out.print("O valor de N2 ï¿½: "+n2);
+		System.out.println("O valor de N1 é: "+n1);
+		System.out.print("O valor de N2 é: "+n2);
 	}// ---------------------------------------------------------------
 	
 	static void trocarNumeros(){

@@ -1,0 +1,48 @@
+/*
+ 
+
+ 
+ */
+import java.util.Scanner;
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		
+		int alt = lerAltura;		
+		int comp = lerComp();
+		
+		for (int l = 0; l < alt; l++){			
+			for (int c = 0; c < comp; c++){
+				System.out.print("*");
+			}
+			System.out.println();
+		}//--------------------------------------------
+
+	}//------------------------------------------------
+
+	static int lerComp(){
+		int c = 0;
+		Scanner teclado = new Scanner(System.in);
+		do{			
+			System.out.print("Digite o valor para o comprimento [3 - 60]: ");
+			c = teclado.nextInt();
+			if (c < 3 || c > 60){
+				System.out.println("Valor fora do intervalo!\n");
+			}
+		}while (c < 3 || c > 60);
+		return c;
+	}
+	
+	static int lerAltura(){
+		int a = 0;
+		Scanner teclado = new Scanner(System.in);
+		do{			
+			System.out.print("Digite o valor para a altura [5 - 15]: ");
+			a = teclado.nextInt();
+			if (a < 5 || a > 15){
+				System.out.println("Valor fora do intervalo!\n");
+			}
+		}while (a < 3 || a > 60);
+		return a;
+	}
+}//----------------------------------------------------

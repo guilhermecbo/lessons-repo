@@ -1,0 +1,19 @@
+/*
+ 
+ 10 col 5 linhas
+ 
+ */
+public class Exercicio01 {
+
+	public static void main(String[] args) {
+		//int col, lin;
+		
+		for (int l=0; l<5; l++){
+			for (int c=0; c<10; c++){
+			System.out.print("*");
+			}
+		}
+
+	}
+
+}

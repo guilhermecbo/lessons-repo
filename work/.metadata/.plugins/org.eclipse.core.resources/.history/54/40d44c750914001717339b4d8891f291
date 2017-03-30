@@ -1,0 +1,28 @@
+/*
+ 
+ 10 col 5 linhas
+ 
+ */
+import java.util.Scanner;
+public class Exercicio02 {
+
+	public static void main(String[] args) {
+		
+		int lin = 5;		
+		int col = lerNumero();
+		
+		for (int l=0; l<lin; l++){			
+			for (int c=0; c<col; c++){
+				System.out.print("*");
+			}
+			System.out.print("\n");
+		}//--------------------------------------------
+
+	}//------------------------------------------------
+
+	static int lerNumero(){
+		Scanner teclado = new Scanner(System.in);
+		System.out.print("Digite o número de colunas: ");
+		return teclado.nextInt(); 
+	}
+}//----------------------------------------------------
