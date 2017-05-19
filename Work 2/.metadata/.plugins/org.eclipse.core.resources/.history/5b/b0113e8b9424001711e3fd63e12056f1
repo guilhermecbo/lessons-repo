@@ -1,0 +1,69 @@
+import java.util.Scanner;
+
+public class Principal {
+	Scanner teclado = new Scanner(System.in);
+	static int n1;
+	static int n2;
+	static char oper;
+	static int opcaoMenu;
+	
+	public static void main(String[] args) {	
+		opcaoMenu = menuPrincipal();
+		
+		if (opcaoMenu == 1){
+			setN1();
+		}
+		/*if (opcaoMenu == 2){
+			setOper();
+		}
+		if (opcaoMenu == 3){
+			setN2();
+		}
+		if (opcaoMenu == 4){
+			calcNum();
+		}*/
+	}
+	
+	public static int setN1(){
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o valor de N1: ");
+		n1 = teclado.nextInt();
+		return n1;
+	}
+	
+	public int setN2(){
+		return n2;
+	}
+
+	public String setOper(String oper){
+		return oper;
+	}
+	
+	static int menuPrincipal(){
+		int a = 0;
+		Scanner teclado = new Scanner(System.in);
+
+	do{			
+		System.out.println("---------------- Menu -------------------");
+		System.out.println("1 - N1");
+		System.out.println("2 - Operação");
+		System.out.println("3 - N2");
+		System.out.println("4 - Resultado");
+		System.out.println("5 - Fim\n");
+		System.out.print("Digite a opção: ");
+		a = teclado.nextInt();
+		if (a < 1 || a > 5){
+			// Incremento da variável de controle de erros.
+			//contErro++;
+			System.out.println("Opção inválida!");
+				/*if (contErro == 3){
+					// O usuário errou 3 vezes e o programa será encerrado.
+					System.out.println("Você errou "+contErro+" vezes! Programa encerrado!\n");
+					System.exit(0);
+				}*/
+		}
+	}while (a >= 1 || a <= 5);
+	return a;
+
+	}
+}

@@ -1,0 +1,22 @@
+
+public class ExArray01 {
+
+	public static void main(String[] args) {
+		Pessoa pessoas[] = new Pessoa[20];
+		
+		Pessoa cliente = new Pessoa();
+		
+		pessoas[0] = new Pessoa();
+		pessoas[0].setNome("Pedro");
+		pessoas[0].setIdade(22);
+		pessoas[0].setSalario(2000);
+		
+		System.out.println(
+				"Nome: "+pessoas[0].getSalario()+
+				"\nIdade: "+pessoas[0].getIdade()+
+				"\nSalário "+pessoas[0].getSalario()
+				);
+
+	}
+
+}

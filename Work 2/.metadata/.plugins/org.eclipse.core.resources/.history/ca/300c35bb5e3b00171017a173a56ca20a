@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class ExArray01 {
+
+	public static void main(String[] args) {
+		Pessoa pessoas[] = new Pessoa[20];
+		
+		Pessoa cliente = new Pessoa();
+		
+		pessoas[0] = new Pessoa();
+		pessoas[0].setNome("Pedro");
+		pessoas[0].setIdade(22);
+		pessoas[0].setSalario(2000);
+		
+		System.out.println(
+				"Nome: "+pessoas[0].getSalario()+
+				"\nIdade: "+pessoas[0].getIdade()+
+				"\nSalário: R$ "+pessoas[0].getSalario()
+				);
+
+	}//-----------------------------------------------------------
+	
+	public static void menuInicial(){
+		do{
+			System.out.println("----------------- Menu -----------------\n");
+			System.out.println("1 - Preencher nome");
+			System.out.println("2 - Digitar idade");
+			System.out.println("3 - Adicionar salário");
+			System.out.println("4 - Mostra dados");
+			int op = new Scanner(System.in).nextInt();
+			
+			if (op == 1) Pessoa().setNome();
+			if (op == 2) mostraSoma();
+			if (op == 3) calculaMediaElementosPares();
+			if (op == 4) elementosAcimaMedia();
+
+			mostraArray();
+			
+		} while (true);
+		
+		
+	}
+}

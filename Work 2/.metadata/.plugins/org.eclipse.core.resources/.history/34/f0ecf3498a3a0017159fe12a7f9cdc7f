@@ -1,0 +1,18 @@
+
+public class Exemplo01Array {
+
+	public static void main(String[] args) {
+
+		int vetor[] = new int[10];
+		int k;
+		
+		k = 3;
+		
+		vetor[0] = 3;
+		
+		System.out.println(vetor[0]);
+		System.out.println(vetor[1]);
+		System.out.println(vetor[2]);
+	}
+
+}

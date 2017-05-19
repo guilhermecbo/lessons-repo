@@ -1,0 +1,50 @@
+
+public class Pessoa {
+	private String nome;
+	private int idade;
+	private int salario;
+	
+	public Pessoa(){
+		String nomePessoa = "";
+		int idadePessoa = 0;
+		int salarioPessoa = 0;
+		
+		setNome(nomePessoa);
+		setIdade(idadePessoa);
+		setSalario(salarioPessoa);
+		
+	}
+	
+	public void setNome(String nome){
+		this.nome = nome;
+	}
+	
+	public String getNome(){
+		return nome;
+	}
+	
+	public void setIdade(int idade){
+		this.idade = idade;
+	}
+	
+	public int getIdade(){
+		return idade;
+	}
+	
+	public void setSalario(int salario){
+		this.salario = salario;
+	}
+	
+	public double getSalario(){
+		return salario;
+	}
+	
+	public static mostraDados(){
+		System.out.println(
+				"Nome: "+pessoas[0].getSalario()+
+				"\nIdade: "+pessoas[0].getIdade()+
+				"\nSalário: R$ "+pessoas[0].getSalario()
+				);
+	}
+
+}

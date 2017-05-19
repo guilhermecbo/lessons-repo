@@ -1,0 +1,55 @@
+import java.util.Scanner;
+public class Exemplo01Array {
+
+	public static void main(String[] args) {
+		Scanner ler = new Scanner(System.in);
+		int vetor[] = new int[10];
+		int k = 3;
+		int i = 0;
+		int j = 0;
+		int soma = 0;
+		int media = 0;
+		int numImpar = 0;
+		int porcentImpar;
+		
+		//vetor[0] = 3;
+		
+		for (j=0; j<10; j++){
+			System.out.print("Digite um valor para o array "+j+" :");
+			vetor[i] = ler.nextInt();
+			soma = vetor[i] + soma;
+			if (vetor[i]%2 == 1){
+				numImpar++;
+			}
+			i++;
+		}
+		
+		media = soma/i;
+		
+		porcentImpar = (100*numImpar)/i;
+		
+		System.out.println("A soma dos valores é "+soma+". \nA média dos números é: "+media+". \nNúmeros acima da média: ");
+		for (i=0; i<10; i++){
+			if (vetor[i]> media){
+				System.out.println(vetor[i]+" no indice "+i);
+			} 
+			
+		
+		
+			//System.out.println(vetor[i]);
+		
+		}
+		System.out.println("A porcentagem de números impares é: "+porcentImpar);
+		
+		//System.out.println(vetor[0]);
+		//System.out.println(vetor[1]);
+		//System.out.println(vetor[2]);
+		//System.out.println();
+		
+		/*do{
+			System.out.println("Vetor "+i+" contém o valor: "+vetor[i]);
+			i++;
+		} while (i<j);*/
+	}
+
+}

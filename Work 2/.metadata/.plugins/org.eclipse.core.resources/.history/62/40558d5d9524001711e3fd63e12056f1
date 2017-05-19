@@ -1,0 +1,40 @@
+import java.util.*;
+
+public class Operacoes {
+	int n1;
+	private int n2;
+	private double resultado;
+	private char oper;
+	
+	Operacoes calc = new Operacoes();
+	
+	public int setN1(){
+		return n1;
+	}
+	
+	public void getN1(){
+		 this.n1 = n1;
+	}
+	
+	public int setN2(){
+		return n2;
+	}
+	
+	public String setOper(String oper){
+		return oper;
+	}
+	
+	
+	//Escolha operação (+ - * /)
+	public double calcNum(){
+		if (oper == "+"){
+			resultado = n1 + n2;
+		}
+		if(oper == "-"){
+			resultado = n1 - n2;
+		}
+		if (oper == "")
+	}
+
+}
+

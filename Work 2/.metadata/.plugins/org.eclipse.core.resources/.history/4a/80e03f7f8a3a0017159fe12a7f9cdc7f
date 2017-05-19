@@ -1,0 +1,25 @@
+
+public class Exemplo01Array {
+
+	public static void main(String[] args) {
+
+		int vetor[] = new int[10];
+		int k;
+		
+		k = 3;
+		int i = 0;
+		
+		vetor[0] = 3;
+		
+		System.out.println(vetor[0]);
+		System.out.println(vetor[1]);
+		System.out.println(vetor[2]);
+		System.out.println();
+		
+		do{
+			System.out.println(vetor[i]);
+			i++;
+		} while (i<10);
+	}
+
+}

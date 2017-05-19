@@ -1,0 +1,64 @@
+import java.util.Scanner;
+
+public class Principal {
+	Scanner teclado = new Scanner(System.in);
+	static int n1;
+	static int n2;
+	static char oper;
+	static int opcaoMenu;
+	static boolean operTeste;
+	
+	public static void main(String[] args) {	
+		menuPrincipal();
+		
+	}
+	
+	public static int setN1(){
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o valor de N1: ");
+		n1 = teclado.nextInt();
+		return n1;
+	}
+	
+	public static int setN2(){
+		Scanner teclado = new Scanner(System.in);
+		System.out.println("Digite o valor de N2: ");
+		n2 = teclado.nextInt();
+		return n2;
+	}
+
+	public String setOper(String oper){
+		return oper;
+	}
+	
+	static int menuPrincipal(){
+		int a = 0;
+		Scanner teclado = new Scanner(System.in);
+	do{			
+		System.out.println("---------------- Menu -------------------");
+		System.out.println("1 - N1");
+		System.out.println("2 - Operação");
+		System.out.println("3 - N2");
+		System.out.println("4 - Resultado");
+		System.out.println("5 - Fim\n");
+		System.out.print("Digite a opção: ");
+		a = teclado.nextInt();
+		if (a < 1 || a > 5){
+			System.out.println("Opção inválida!");
+		}
+		if (a == 1){
+			setN1();
+		}
+		if (a == 4){
+			if (operTeste == false){
+				System.out.println("Os valores não foram preenchidos!");
+			}
+		}
+		if (a == 3){
+			setN2();
+		}
+			
+	}while (a < 1 || a > 5);
+	return a;
+	}
+}

@@ -1,0 +1,59 @@
+import java.util.Scanner;
+
+public class Principal {
+
+	public static void main(String[] args) {	
+		int opcaoMenu = menuPrincipal();
+		
+		if (opcaoMenu == 1){
+			calc.setN1();
+		}
+		if (opcaoMenu == 2){
+			calc.setOper();
+		}
+		if (opcaoMenu == 3){
+			calc.setN2();
+		}
+		if (opcaoMenu == 4){
+			calcNum();
+		}
+		
+		
+		//calc.setN1();
+		//calc.setN2();
+		//calc.setOper();
+
+	}
+	/*public static String teclado(String mensagem){
+		Scanner ler = new Scanner(System.in);
+		System.out.print(mensagem);
+		return ler.nextLine();
+	}*/
+	
+	static int menuPrincipal(){
+		int a = 0;
+		Scanner teclado = new Scanner(System.in);
+	do{			
+		System.out.println("---------------- Menu -------------------");
+		System.out.println("1 - N1");
+		System.out.println("2 - Operação");
+		System.out.println("3 - N2");
+		System.out.println("4 - Resultado");
+		System.out.println("5 - Fim\n");
+		System.out.print("Digite a opção: ");
+		a = teclado.nextInt();
+		if (a < 1 || a > 5){
+			// Incremento da variável de controle de erros.
+			//contErro++;
+			System.out.println("Opção inválida!");
+				/*if (contErro == 3){
+					// O usuário errou 3 vezes e o programa será encerrado.
+					System.out.println("Você errou "+contErro+" vezes! Programa encerrado!\n");
+					System.exit(0);
+				}*/
+		}
+	}while (a >= 1 || a <= 5);
+	return a;
+
+	}
+}
