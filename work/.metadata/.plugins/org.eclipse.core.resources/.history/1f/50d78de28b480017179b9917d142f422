@@ -1,0 +1,31 @@
+
+public class Coordenadas {
+	public static void main(String[] args) {
+		Ponto ponto = new Ponto();
+		
+		ponto.Construtor();
+		
+		
+		}
+	
+	static int void incrementaCoord(){
+		Ponto ponto = new Ponto();
+		System.out.print("Digite o valor que gostaria de incrementar na coordenada X: ");
+		
+		System.out.print("Digite o valor que gostaria de incrementar na coordenada X: ");
+		
+		
+	}
+	
+	static int void decrementaCoord(){
+		
+	}
+	
+
+		
+
+
+
+	
+	
+}

@@ -1,0 +1,30 @@
+import java.util.Scanner;
+
+public class Coordenadas {
+	public static void main(String[] args) {
+		Ponto ponto = new Ponto();
+		
+		ponto.Construtor();
+		
+		do{
+			System.out.print("As coordenadas atuais são: \n"+ponto.coordenadaX+"\n"+ponto.coordenadaY);
+			System.out.println("Digite a opção: ");
+			int op = new Scanner(System.in).nextInt();
+			
+			if (op == 1)
+				ponto.incrementaCoord();
+		}while (true);
+		
+		
+		}
+	
+
+	
+
+		
+
+
+
+	
+	
+}

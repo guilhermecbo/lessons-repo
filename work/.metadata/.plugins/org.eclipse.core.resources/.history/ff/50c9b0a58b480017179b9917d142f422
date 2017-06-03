@@ -1,0 +1,28 @@
+
+public class Coordenadas {
+	Ponto ponto = new Ponto();
+	
+	public static void main(String[] args) {
+		
+		
+		ponto.Construtor();
+		
+		
+		}
+	
+	static int void incrementaCoord(){
+		
+	}
+	
+	static int void decrementaCoord(){
+		
+	}
+	
+
+		
+
+
+
+	
+	
+}

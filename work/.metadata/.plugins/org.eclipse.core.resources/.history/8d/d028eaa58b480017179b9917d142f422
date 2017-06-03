@@ -1,0 +1,30 @@
+
+public class Ponto {
+	static int coordenadaX = 0;
+	static int coordenadaY = 0;
+	static int construtor = 0;
+	
+	public static int getCoordenadaX() {
+		return coordenadaX;
+	}
+	public static void setCoordenadaX(int coordenadaX) {
+		Ponto.coordenadaX = coordenadaX;
+	}
+	public static int getCoordenadaY() {
+		return coordenadaY;
+	}
+	public static void setCoordenadaY(int coordenadaY) {
+		Ponto.coordenadaY = coordenadaY;
+	}
+	
+	public void Construtor(){
+		int zeraValor = 0;
+		setCoordenadaX(zeraValor);
+		setCoordenadaY(zeraValor);
+		System.out.println("Os valores foram reiniciados!");
+	
+	}
+
+	
+	
+}

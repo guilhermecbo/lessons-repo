@@ -1,0 +1,24 @@
+
+public class Coordenadas {
+	public static void main(String[] args) {
+		Ponto ponto = new Ponto();
+		
+		ponto.Construtor();
+		
+		do{
+			System.out.print("As coordenadas atuais são: \n"+ponto.getCoordenadaX()+"\n"+ponto.getCoordenadaY());
+		}while (true);
+		
+		
+		}
+	
+
+	
+
+		
+
+
+
+	
+	
+}
